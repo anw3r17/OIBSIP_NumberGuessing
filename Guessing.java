@@ -4,12 +4,12 @@ public class Guessing{
         Scanner s = new Scanner(System.in);
         Random rand = new Random();
         int crand =  rand.nextInt(100) + 1;
-        System.out.printf("--------NUMBER GUESSING GAME--------\n");
-        System.out.printf("The computer is thinking between the numbers 1 to 100.\n");
-        System.out.printf("You have maximum of 10 attempts to guess the correct number failing which the Computer wins and the game terminates.\n");
-        System.out.printf("If you win the round the game resets & exits out and the victory message is Displayed.\n");
+        System.out.println("--------NUMBER GUESSING GAME--------");
+        System.out.println("The computer is thinking between the numbers 1 to 100.");
+        System.out.println("You have maximum of 10 attempts to guess the correct number failing which the Computer wins and the game terminates.");
+        System.out.println("If you win the round the game resets & exits out and the victory message is Displayed.");
         for(int attempts = 1; attempts <= 10; attempts++){
-            System.out.printf("Attempt number:" + attempts + "\nEnter your guess:");
+            System.out.printf("Attempt number:" + attempts + "  Enter your guess:");
             int guess = s.nextInt();
             if(crand == guess){
                 System.out.println("Correct guess!");
