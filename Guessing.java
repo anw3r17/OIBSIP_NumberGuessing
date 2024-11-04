@@ -26,5 +26,6 @@ public class Guessing{
                 System.out.println("You were not able to guess the correct number, you lost the game. The correct number is" + crand);
         }
     }
+        s.close();
 }
 }
